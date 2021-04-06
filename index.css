@@ -235,3 +235,34 @@ footer
     justify-content: center;
   }
 }
+
+@media (max-height: 376px)
+{
+  footer
+  {
+    display: none;
+  }
+  header
+  {
+    display: none;
+  }
+  .text li a
+  {
+    font-size: 1.5em;
+    padding: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+
+  .text li h3
+  {
+    padding: 0px;
+    margin-top: 3px;
+  }
+  .text img
+  {
+    padding: 0;
+    padding-right: 15px;
+    
+  }
+}
