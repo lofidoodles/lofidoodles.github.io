@@ -8,29 +8,30 @@
   box-sizing: border-box;
   font-family: 'Indie Flower', cursive;
 }
+
 header
 {
-  font-size: 2em;
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: 40px 100px;
   z-index: 1000;
-  display: flex;
+  display: grid;
+  font-size: 2em;
+  position: absolute;
   justify-content: flex-end;
-  align-items: right;
+  align-content: flex-end;
 }
+
 header .logo
 {
-  color: #836953;
+  color: #836953;  
+  width: 100%;
   
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently */
+}
+header .break-column {
+  flex-basis: 100%;
+  width: 0;
 }
 .showcase
 {
@@ -158,6 +159,13 @@ header .logo
   font-weight: 700;
   color: #dd864a;
   line-height: 1em;
+  
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
 }
 
 footer
@@ -173,14 +181,6 @@ footer
   justify-content: flex-end;
   align-items: center;
   text-align: center;
-  
-  
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently */
 }
 
 .text li a:hover
@@ -194,7 +194,7 @@ footer
   .showcase header,
   .showcase footer
   {
-    padding: 40px;
+    padding: 20px 0px;
   }
   .text li h2
   {
